@@ -31,7 +31,8 @@ class LoginScreenContent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 100),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 30, vertical: 100),
                 child: Form(
                   key: context.read<LoginCubit>().formKey,
                   child: Column(
@@ -44,14 +45,16 @@ class LoginScreenContent extends StatelessWidget {
                       const SizedBox(height: 40),
                       // Email input field
                       InputTextFormField(
-                        textController: context.read<LoginCubit>().emailController,
+                        textController:
+                            context.read<LoginCubit>().emailController,
                         hintText: "Please enter your email",
                         errorText: "Enter valid email",
                         icons: Icons.email_outlined,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
                             return 'Please enter your email';
-                          } else if (!RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(value)) {
+                          } else if (!RegExp(r'^[^@]+@[^@]+\.[^@]+')
+                              .hasMatch(value)) {
                             return 'Enter a valid email address';
                           }
                           return null;
@@ -59,7 +62,8 @@ class LoginScreenContent extends StatelessWidget {
                       ),
                       // Password input field
                       InputTextFormField(
-                        textController: context.read<LoginCubit>().passwordController,
+                        textController:
+                            context.read<LoginCubit>().passwordController,
                         hintText: "Password",
                         errorText: "Please enter your password",
                         icons: Icons.lock_outline,
@@ -95,8 +99,14 @@ class LoginScreenContent extends StatelessWidget {
                             return CustomButton(
                               text: "Login",
                               onTapAction: () {
-                                if (context.read<LoginCubit>().formKey.currentState!.validate()) {
-                                  context.read<LoginCubit>().loginWithEmailAction();
+                                if (context
+                                    .read<LoginCubit>()
+                                    .formKey
+                                    .currentState!
+                                    .validate()) {
+                                  context
+                                      .read<LoginCubit>()
+                                      .loginWithEmailAction();
                                 }
                               },
                             );
@@ -106,7 +116,8 @@ class LoginScreenContent extends StatelessWidget {
                       const SizedBox(height: 15),
                       // Google Sign-In Button
                       ElevatedButton.icon(
-                        onPressed: () => context.read<LoginCubit>().loginWithGoogle(),
+                        onPressed: () =>
+                            context.read<LoginCubit>().loginWithGoogle(),
                         icon: Image.asset(
                           'assets/images/img.png',
                           height: 24.0,
@@ -124,7 +135,7 @@ class LoginScreenContent extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

@@ -34,16 +34,3 @@ class SignUpCubit extends Cubit<SignUpState> {
     }
   }
 }
-//
-// C:\Users\ESLAM\AppData\Local\Android\Sdk
-// C:\Users\ESLAM\AppData\Local\Android\Sdk\
-//
-//
-// set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_201
-// set PATH=%JAVA_HOME%\bin;%PATH%
-//
-// C:\Users\ESLAM\AppData\Local\Android\Sdk\tools\bin
-//
-// C:\Program Files\Java\jdk1.8.0_201
-//
-// set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_201

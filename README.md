@@ -1,16 +1,10 @@
-# ecommerce
+Flutter E-Commerce App
+A simple Flutter e-commerce app with Firebase Authentication for user registration/login, featuring a product catalog, shopping cart, favorites list, and user profile. Built with Flutter and Firebase Firestore for real-time data.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features
+Email/password registration and login.
+Product catalog with add-to-cart and favorites functionality.
+Shopping cart to manage items.
+Favorites list to save preferred products.
+User profile to view and edit basic info.
+Home Screen.

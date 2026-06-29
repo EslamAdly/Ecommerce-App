@@ -21,7 +21,7 @@ This is a simple e-commerce mobile application built with Flutter and Firebase. 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/EslamAdly/Ecommerce-App.git
    ```
 2. Navigate to the project directory:
    ```bash
